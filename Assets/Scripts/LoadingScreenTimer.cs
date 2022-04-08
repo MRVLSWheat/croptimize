@@ -4,34 +4,18 @@ using UnityEngine;
 
 public class LoadingScreenTimer : MonoBehaviour
 {
-    float loadingTimer = 5.0f;
-    bool loadingScreen = false;
+    public float loadingTimer;
     public GameObject loadScreen;
     public GameObject fieldSelectScreen;
 
     // Update is called once per frame
     void Update()
     {
-        if (loadingScreen == true)
-        {
-            LoadingStart();
-        }
-    }
-
-    public void LoadingScreen()
-    {
-        loadingScreen = true;
-    }
-
-    void LoadingStart()
-    {
         loadingTimer -= Time.deltaTime;
         if (loadingTimer < 0)
         {
             loadScreen.SetActive(false);
             fieldSelectScreen.SetActive(true);
-            loadingScreen = false;
-            loadingTimer = Random.Range(1.0f, 5.0f);
         }
     }
 }
