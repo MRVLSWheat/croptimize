@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R3CR20E6Q1N",
         "name": "com.Potatwo.Croptimize",
-        "processId": 24031,
+        "processId": 3238,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -102,6 +102,12 @@
             "deviceId": "R3CR20E6Q1N",
             "name": "com.Potatwo.Croptimize",
             "processId": 24031,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20E6Q1N",
+            "name": "com.Potatwo.Croptimize",
+            "processId": 3238,
             "exited": false
         }
     ],
