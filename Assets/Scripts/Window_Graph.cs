@@ -14,21 +14,35 @@ public class Window_Graph : MonoBehaviour
         graphContainer = transform.Find("graphContainer").GetComponent<RectTransform>();
         int randomNumber = Random.Range(20, 80);
 
-        int monday = randomNumber + Random.Range(-4, 4);
+        int one = randomNumber + Random.Range(-4, 4);
 
-        int tuesday = monday + Random.Range(-4, 4);
+        int two = one + Random.Range(-4, 4);
 
-        int wednesday = tuesday + Random.Range(-4, 4);
+        int three = two + Random.Range(-4, 4);
 
-        int thursday = wednesday + Random.Range(-4, 4);
+        int four = three + Random.Range(-4, 4);
 
-        int friday = thursday + Random.Range(-4, 4);
+        int five = four + Random.Range(-4, 4);
 
-        int saturday = friday + Random.Range(-4, 4);
+        int six = five + Random.Range(-4, 4);
 
-        int sunday = saturday + Random.Range(-4, 4);
+        int seven = six + Random.Range(-4, 4);
 
-        List<int> valueList = new List<int>() { monday, tuesday, wednesday, thursday, friday, saturday, sunday };
+        int eight = seven + Random.Range(-4, 4);
+
+        int nine = eight + Random.Range(-4, 4);
+
+        int ten = nine + Random.Range(-4, 4);
+
+        int eleven = ten + Random.Range(-4, 4);
+
+        int twelve = eleven + Random.Range(-4, 4);
+
+        int thirdteen = twelve + Random.Range(-4, 4);
+
+        int fourteen = thirdteen + Random.Range(-4, 4);
+
+        List<int> valueList = new List<int>() {one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirdteen, fourteen};
         ShowGraph(valueList);
 
         Debug.Log("Start moisture = " + randomNumber);
@@ -57,7 +71,7 @@ public class Window_Graph : MonoBehaviour
 
         for (int i = 0; i < valueList.Count; i++)
         {
-            float xPosition = xSize + i * xSize;
+            float xPosition = xSize + i * xSize -45;
             float yPosition = (valueList[i] / yMaximum) * graphHeight;
             
             GameObject circleGameObject = CreateCircle(new Vector2(xPosition, yPosition));
