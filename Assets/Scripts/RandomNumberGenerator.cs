@@ -59,6 +59,8 @@ public class RandomNumberGenerator : MonoBehaviour
 
         int sunday = saturday + Random.Range(-4, 4);
 
+        Debug.Log("Start temperature = " + temperature);
+
         day1.text = monday.ToString();
         day2.text = tuesday.ToString();
         day3.text = wednesday.ToString();

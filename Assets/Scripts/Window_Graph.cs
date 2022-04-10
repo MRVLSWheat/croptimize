@@ -12,7 +12,7 @@ public class Window_Graph : MonoBehaviour
     private void Awake()
     {
         graphContainer = transform.Find("graphContainer").GetComponent<RectTransform>();
-        int randomNumber = Random.Range(0, 99);
+        int randomNumber = Random.Range(20, 80);
 
         int monday = randomNumber + Random.Range(-4, 4);
 
@@ -30,6 +30,8 @@ public class Window_Graph : MonoBehaviour
 
         List<int> valueList = new List<int>() { monday, tuesday, wednesday, thursday, friday, saturday, sunday };
         ShowGraph(valueList);
+
+        Debug.Log("Start moisture = " + randomNumber);
     }
 
     private GameObject CreateCircle(Vector2 anchoredPosition)
