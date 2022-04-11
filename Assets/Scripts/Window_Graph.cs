@@ -3,13 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using CodeMonkey.Utils;
+using TMPro;
 
 public class Window_Graph : MonoBehaviour
 {
+    public GameObject moistureNotification;
+
+    public GameObject backgroundColorGreen;
+    public GameObject backgroundColorRed;
+    public GameObject backgroundColorBlue;
+
+    public GameObject backgroundBackRed;
+    public GameObject backgroundBackGreen;
+    public GameObject backgroundBackBlue;
+
+    public GameObject backgroundFrontRed;
+    public GameObject backgroundFrontGreen;
+    public GameObject backgroundFrontBlue;
+
+    public GameObject waterDropBlue;
+    public GameObject waterDropRed;
+    public GameObject waterDropDarkBlue;
+
+    public TextMeshProUGUI groundMoisture;
+
+    public int combinedMoisture;
+    public int averageMoisture;
+
     [SerializeField] private Sprite circleSprite;
     private RectTransform graphContainer;
 
-    private void Awake()
+    public void DefineMoisture()
     {
         graphContainer = transform.Find("graphContainer").GetComponent<RectTransform>();
         int randomNumber = Random.Range(20, 80);
@@ -45,7 +69,13 @@ public class Window_Graph : MonoBehaviour
         List<int> valueList = new List<int>() {one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirdteen, fourteen};
         ShowGraph(valueList);
 
-        Debug.Log("Start moisture = " + randomNumber);
+        combinedMoisture = one + two + three + four + five + six + seven + eight + nine + ten + eleven + twelve + thirdteen + fourteen;
+        averageMoisture = combinedMoisture / 14;
+
+        int finalMoisture = fourteen + 10;
+        groundMoisture.text = finalMoisture.ToString() + "%";
+
+        SetImages();
     }
 
     private GameObject CreateCircle(Vector2 anchoredPosition)
@@ -97,5 +127,34 @@ public class Window_Graph : MonoBehaviour
         rectTransform.sizeDelta = new Vector2(distance, 3f);
         rectTransform.anchoredPosition = dotPositionA + dir * distance * .5f;
         rectTransform.localEulerAngles = new Vector3(0, 0, UtilsClass.GetAngleFromVectorFloat(dir));
+    }
+
+    public void SetImages()
+    {
+        if (averageMoisture < 15)
+        {
+            moistureNotification.SetActive(true);
+            backgroundBackRed.SetActive(true);
+            backgroundFrontRed.SetActive(true);
+            waterDropRed.SetActive(true);
+            backgroundColorRed.SetActive(true);
+        }
+
+        if (averageMoisture > 75)
+        {
+            moistureNotification.SetActive(true);
+            backgroundBackBlue.SetActive(true);
+            backgroundFrontBlue.SetActive(true);
+            waterDropDarkBlue.SetActive(true);
+            backgroundColorBlue.SetActive(true);
+        }
+
+        else
+        {
+            backgroundBackGreen.SetActive(true);
+            backgroundFrontGreen.SetActive(true);
+            waterDropBlue.SetActive(true);
+            backgroundColorGreen.SetActive(true);
+        }
     }
 }

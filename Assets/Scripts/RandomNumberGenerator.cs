@@ -7,9 +7,25 @@ using UnityEngine;
 public class RandomNumberGenerator : MonoBehaviour
 { 
     public GameObject[] weatherConditions;
+    public GameObject temperatureNotification;
+    public GameObject shakingNotification;
+
+    public GameObject thermometerBlue;
+    public GameObject thermometerDarkBlue;
+    public GameObject thermometerRed;
+
+    public GameObject weatherBackgroundBackgreen;
+    public GameObject weatherBackgroundBackBlue;
+    public GameObject weatherBackgroundBackRed;
+
+    public GameObject weatherBackgroundFrontGreen;
+    public GameObject weatherBackgroundFrontBlue;
+    public GameObject weatherBackgroundFrontRed;
 
     public int index;
     public int temperature;
+    public int combinedTemp;
+    public int averageTemp;
 
     public GameObject parentFolder;
 
@@ -29,9 +45,13 @@ public class RandomNumberGenerator : MonoBehaviour
     public TMP_Text day6;
     public TMP_Text day7;
 
-    public void Start()
+    public TextMeshProUGUI homeScreenTemp;
+    public TextMeshProUGUI groundShake;
+
+    public void DefineWeather()
     {
         GenerateRandomTemperature();
+        RandomGroundShake();
         SetWeatherMonday();
         SetWeatherTuesday();
         SetWeatherWednesday();
@@ -59,8 +79,6 @@ public class RandomNumberGenerator : MonoBehaviour
 
         int sunday = saturday + Random.Range(-4, 4);
 
-        Debug.Log("Start temperature = " + temperature);
-
         day1.text = monday.ToString();
         day2.text = tuesday.ToString();
         day3.text = wednesday.ToString();
@@ -68,6 +86,49 @@ public class RandomNumberGenerator : MonoBehaviour
         day5.text = friday.ToString();
         day6.text = saturday.ToString();
         day7.text = sunday.ToString();
+
+        combinedTemp = monday + tuesday + wednesday + thursday + friday + saturday + sunday;
+        averageTemp = combinedTemp / 7;
+        homeScreenTemp.text = averageTemp.ToString() + "°C";
+
+        SetThermometerImage();
+    }
+
+    private void RandomGroundShake()
+    {
+        int shakeNumber = Random.Range(0, 15);
+        groundShake.text = shakeNumber.ToString() + "%";
+        
+        if (shakeNumber >= 10)
+        {
+            shakingNotification.SetActive(true);
+        }
+    }
+
+    public void SetThermometerImage()
+    {
+        if (averageTemp > 25)
+        {
+            thermometerRed.SetActive(true);
+            temperatureNotification.SetActive(true);
+            weatherBackgroundBackRed.SetActive(true);
+            weatherBackgroundFrontRed.SetActive(true);
+        }
+
+        if (averageTemp < 5)
+        {
+            thermometerDarkBlue.SetActive(true);
+            temperatureNotification.SetActive(true);
+            weatherBackgroundBackBlue.SetActive(true);
+            weatherBackgroundFrontBlue.SetActive(true);
+        }
+        
+        else
+        {
+            thermometerBlue.SetActive(true);
+            weatherBackgroundBackgreen.SetActive(true);
+            weatherBackgroundFrontGreen.SetActive(true);
+        }
     }
 
     public void SetWeatherMonday()

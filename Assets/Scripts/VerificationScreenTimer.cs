@@ -9,7 +9,6 @@ public class VerificationScreenTimer : MonoBehaviour
     public GameObject verificationScreen;
     public GameObject loginScreen;
 
-    // Update is called once per frame
     void Update()
     {
         if (showScreen == true)

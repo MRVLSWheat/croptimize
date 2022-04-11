@@ -9,7 +9,6 @@ public class LoadingScreenTimer : MonoBehaviour
     public GameObject loadScreen;
     public GameObject fieldSelectScreen;
 
-    // Update is called once per frame
     void Update()
     {
         if (loadingScreen == true)
