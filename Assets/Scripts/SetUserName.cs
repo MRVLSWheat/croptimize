@@ -14,8 +14,10 @@ public class SetUserName : MonoBehaviour
     public GameObject loadScreen;
     public GameObject loginScreen;
     public GameObject graphObject;
+    public GameObject weatherObject;
 
     private Window_Graph setGraph;
+    private RandomNumberGenerator setWeather;
 
     private string fakeUserName = "Mercury";
     private string fakePassword = "Design";
@@ -26,6 +28,7 @@ public class SetUserName : MonoBehaviour
     public void Awake()
     {
         setGraph = graphObject.GetComponent<Window_Graph>();
+        setWeather = weatherObject.GetComponent<RandomNumberGenerator>();
     }
 
     public void UserName()
@@ -43,6 +46,7 @@ public class SetUserName : MonoBehaviour
             if (firstLogin == 0)
             {
                 setGraph.DefineMoisture();
+                setWeather.DefineWeather();
                 firstLogin = 1;
             }
         }

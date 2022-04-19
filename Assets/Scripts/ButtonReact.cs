@@ -2,13 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class ButtonReact : MonoBehaviour
 {
-    public AudioSource buttonPress;
+    public GameObject settings;
 
-    public void DeviceReact()
+    public void OpenSettings()
     {
-        buttonPress.Play();
+        if (settings.activeInHierarchy)
+        {
+            settings.SetActive(false);
+        }
+        else
+        {
+            settings.SetActive(true);
+        }
     }
 }

@@ -7,23 +7,12 @@ using TMPro;
 
 public class Window_Graph : MonoBehaviour
 {
+    public GameObject[] backGroundColor;
+    public GameObject[] backGroundBack;
+    public GameObject[] backGroundFront;
+    public GameObject[] waterDropColor;
+
     public GameObject moistureNotification;
-
-    public GameObject backgroundColorGreen;
-    public GameObject backgroundColorRed;
-    public GameObject backgroundColorBlue;
-
-    public GameObject backgroundBackRed;
-    public GameObject backgroundBackGreen;
-    public GameObject backgroundBackBlue;
-
-    public GameObject backgroundFrontRed;
-    public GameObject backgroundFrontGreen;
-    public GameObject backgroundFrontBlue;
-
-    public GameObject waterDropBlue;
-    public GameObject waterDropRed;
-    public GameObject waterDropDarkBlue;
 
     public TextMeshProUGUI groundMoisture;
 
@@ -134,27 +123,27 @@ public class Window_Graph : MonoBehaviour
         if (averageMoisture < 15)
         {
             moistureNotification.SetActive(true);
-            backgroundBackRed.SetActive(true);
-            backgroundFrontRed.SetActive(true);
-            waterDropRed.SetActive(true);
-            backgroundColorRed.SetActive(true);
+            backGroundBack[0].SetActive(true);
+            backGroundFront[0].SetActive(true);
+            waterDropColor[1].SetActive(true);
+            backGroundColor[1].SetActive(true);
         }
 
         if (averageMoisture > 75)
         {
             moistureNotification.SetActive(true);
-            backgroundBackBlue.SetActive(true);
-            backgroundFrontBlue.SetActive(true);
-            waterDropDarkBlue.SetActive(true);
-            backgroundColorBlue.SetActive(true);
+            backGroundBack[2].SetActive(true);
+            backGroundFront[2].SetActive(true);
+            waterDropColor[2].SetActive(true);
+            backGroundColor[2].SetActive(true);
         }
 
         else
         {
-            backgroundBackGreen.SetActive(true);
-            backgroundFrontGreen.SetActive(true);
-            waterDropBlue.SetActive(true);
-            backgroundColorGreen.SetActive(true);
+            backGroundBack[1].SetActive(true);
+            backGroundFront[1].SetActive(true);
+            waterDropColor[0].SetActive(true);
+            backGroundColor[0].SetActive(true);
         }
     }
 }

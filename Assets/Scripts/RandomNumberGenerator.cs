@@ -7,51 +7,32 @@ using UnityEngine;
 public class RandomNumberGenerator : MonoBehaviour
 { 
     public GameObject[] weatherConditions;
-    public GameObject temperatureNotification;
-    public GameObject shakingNotification;
+    public GameObject[] weatherBackgrounds;
+    public GameObject[] weatherBackgroundFronts;
+    public GameObject[] notifications;
+    public GameObject[] thermometers;
 
-    public GameObject thermometerBlue;
-    public GameObject thermometerDarkBlue;
-    public GameObject thermometerRed;
+    public Transform[] points;
+    public TMP_Text[] days;   
 
-    public GameObject weatherBackgroundBackgreen;
-    public GameObject weatherBackgroundBackBlue;
-    public GameObject weatherBackgroundBackRed;
-
-    public GameObject weatherBackgroundFrontGreen;
-    public GameObject weatherBackgroundFrontBlue;
-    public GameObject weatherBackgroundFrontRed;
+    public GameObject parentFolder;
+    public GameObject redPotato;
 
     public int index;
     public int temperature;
     public int combinedTemp;
     public int averageTemp;
 
-    public GameObject parentFolder;
-
-    public Transform point1;
-    public Transform point2;
-    public Transform point3;
-    public Transform point4;
-    public Transform point5;
-    public Transform point6;
-    public Transform point7;
-
-    public TMP_Text day1;
-    public TMP_Text day2;
-    public TMP_Text day3;
-    public TMP_Text day4;
-    public TMP_Text day5;
-    public TMP_Text day6;
-    public TMP_Text day7;
-
     public TextMeshProUGUI homeScreenTemp;
     public TextMeshProUGUI groundShake;
+    public TextMeshProUGUI groundShakeLog;
+    public TextMeshProUGUI time;
 
     public void DefineWeather()
     {
         GenerateRandomTemperature();
         RandomGroundShake();
+        RandomTime();
         SetWeatherMonday();
         SetWeatherTuesday();
         SetWeatherWednesday();
@@ -79,13 +60,13 @@ public class RandomNumberGenerator : MonoBehaviour
 
         int sunday = saturday + Random.Range(-4, 4);
 
-        day1.text = monday.ToString();
-        day2.text = tuesday.ToString();
-        day3.text = wednesday.ToString();
-        day4.text = thursday.ToString();
-        day5.text = friday.ToString();
-        day6.text = saturday.ToString();
-        day7.text = sunday.ToString();
+        days[0].text = monday.ToString();
+        days[1].text = tuesday.ToString();
+        days[2].text = wednesday.ToString();
+        days[3].text = thursday.ToString();
+        days[4].text = friday.ToString();
+        days[5].text = saturday.ToString();
+        days[6].text = sunday.ToString();
 
         combinedTemp = monday + tuesday + wednesday + thursday + friday + saturday + sunday;
         averageTemp = combinedTemp / 7;
@@ -98,10 +79,12 @@ public class RandomNumberGenerator : MonoBehaviour
     {
         int shakeNumber = Random.Range(0, 15);
         groundShake.text = shakeNumber.ToString() + "%";
+        groundShakeLog.text = shakeNumber.ToString() + "%";
         
         if (shakeNumber >= 10)
         {
-            shakingNotification.SetActive(true);
+            notifications[1].SetActive(true);
+            redPotato.SetActive(true);
         }
     }
 
@@ -109,25 +92,25 @@ public class RandomNumberGenerator : MonoBehaviour
     {
         if (averageTemp > 25)
         {
-            thermometerRed.SetActive(true);
-            temperatureNotification.SetActive(true);
-            weatherBackgroundBackRed.SetActive(true);
-            weatherBackgroundFrontRed.SetActive(true);
+            thermometers[2].SetActive(true);
+            notifications[0].SetActive(true);
+            weatherBackgrounds[2].SetActive(true);
+            weatherBackgroundFronts[2].SetActive(true);
         }
 
         if (averageTemp < 5)
         {
-            thermometerDarkBlue.SetActive(true);
-            temperatureNotification.SetActive(true);
-            weatherBackgroundBackBlue.SetActive(true);
-            weatherBackgroundFrontBlue.SetActive(true);
+            thermometers[1].SetActive(true);
+            notifications[0].SetActive(true);
+            weatherBackgrounds[1].SetActive(true);
+            weatherBackgroundFronts[1].SetActive(true);
         }
         
         else
         {
-            thermometerBlue.SetActive(true);
-            weatherBackgroundBackgreen.SetActive(true);
-            weatherBackgroundFrontGreen.SetActive(true);
+            thermometers[0].SetActive(true);
+            weatherBackgrounds[0].SetActive(true);
+            weatherBackgroundFronts[0].SetActive(true);
         }
     }
 
@@ -144,7 +127,7 @@ public class RandomNumberGenerator : MonoBehaviour
 
         GameObject chosenImage = weatherConditions[index];
 
-        GameObject weatherParent = Instantiate(chosenImage, point1.position, Quaternion.identity) as GameObject;
+        GameObject weatherParent = Instantiate(chosenImage, points[0].position, Quaternion.identity) as GameObject;
         weatherParent.transform.SetParent(parentFolder.gameObject.transform);
     }
 
@@ -161,7 +144,7 @@ public class RandomNumberGenerator : MonoBehaviour
 
         GameObject chosenImage = weatherConditions[index];
 
-        GameObject weatherParent = Instantiate(chosenImage, point2.position, Quaternion.identity) as GameObject;
+        GameObject weatherParent = Instantiate(chosenImage, points[1].position, Quaternion.identity) as GameObject;
         weatherParent.transform.SetParent(parentFolder.gameObject.transform);
     }
 
@@ -178,7 +161,7 @@ public class RandomNumberGenerator : MonoBehaviour
 
         GameObject chosenImage = weatherConditions[index];
 
-        GameObject weatherParent = Instantiate(chosenImage, point3.position, Quaternion.identity) as GameObject;
+        GameObject weatherParent = Instantiate(chosenImage, points[2].position, Quaternion.identity) as GameObject;
         weatherParent.transform.SetParent(parentFolder.gameObject.transform);
     }
 
@@ -195,7 +178,7 @@ public class RandomNumberGenerator : MonoBehaviour
 
         GameObject chosenImage = weatherConditions[index];
 
-        GameObject weatherParent = Instantiate(chosenImage, point4.position, Quaternion.identity) as GameObject;
+        GameObject weatherParent = Instantiate(chosenImage, points[3].position, Quaternion.identity) as GameObject;
         weatherParent.transform.SetParent(parentFolder.gameObject.transform);
     }
 
@@ -212,7 +195,7 @@ public class RandomNumberGenerator : MonoBehaviour
 
         GameObject chosenImage = weatherConditions[index];
 
-        GameObject weatherParent = Instantiate(chosenImage, point5.position, Quaternion.identity) as GameObject;
+        GameObject weatherParent = Instantiate(chosenImage, points[4].position, Quaternion.identity) as GameObject;
         weatherParent.transform.SetParent(parentFolder.gameObject.transform);
     }
 
@@ -229,7 +212,7 @@ public class RandomNumberGenerator : MonoBehaviour
 
         GameObject chosenImage = weatherConditions[index];
 
-        GameObject weatherParent = Instantiate(chosenImage, point6.position, Quaternion.identity) as GameObject;
+        GameObject weatherParent = Instantiate(chosenImage, points[5].position, Quaternion.identity) as GameObject;
         weatherParent.transform.SetParent(parentFolder.gameObject.transform);
     }
 
@@ -246,7 +229,33 @@ public class RandomNumberGenerator : MonoBehaviour
 
         GameObject chosenImage = weatherConditions[index];
 
-        GameObject weatherParent = Instantiate(chosenImage, point7.position, Quaternion.identity) as GameObject;
+        GameObject weatherParent = Instantiate(chosenImage, points[6].position, Quaternion.identity) as GameObject;
         weatherParent.transform.SetParent(parentFolder.gameObject.transform);
+    }
+
+    public void RandomTime()
+    {
+        int hours = Random.Range(0, 24);
+        int minutes = Random.Range(0, 60);
+
+        if (hours < 10 && minutes > 10)
+        {
+            time.text = "0" + hours + ":" + minutes + "h";
+        }
+
+        if (hours < 10 && minutes < 10)
+        {
+            time.text = "0" + hours + ":0" + minutes + "h";
+        }
+
+        if (hours > 10 && minutes < 10)
+        {
+            time.text = hours + ":0" + minutes + "h"; 
+        }
+
+        if (hours > 10 && minutes > 10)
+        {
+            time.text = hours + ":" + minutes + "h";
+        }
     }
 }

@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R3CR20E6Q1N",
         "name": "com.Potatwo.Croptimize",
-        "processId": 24514,
+        "processId": 18026,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -144,6 +144,36 @@
             "deviceId": "R3CR20E6Q1N",
             "name": "com.Potatwo.Croptimize",
             "processId": 24514,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20E6Q1N",
+            "name": "com.Potatwo.Croptimize",
+            "processId": 6382,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20E6Q1N",
+            "name": "com.Potatwo.Croptimize",
+            "processId": 9469,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20E6Q1N",
+            "name": "com.Potatwo.Croptimize",
+            "processId": 13435,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20E6Q1N",
+            "name": "com.Potatwo.Croptimize",
+            "processId": 17421,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20E6Q1N",
+            "name": "com.Potatwo.Croptimize",
+            "processId": 18026,
             "exited": false
         }
     ],
