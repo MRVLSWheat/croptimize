@@ -41,7 +41,7 @@ public class SetUserName : MonoBehaviour
             wrongCredentials.text = "";
             loadScreen.SetActive(true);
             loginScreen.SetActive(false);
-            Debug.Log("Login succesful");
+            Debug.Log("Login successful");
             
             if (firstLogin == 0)
             {

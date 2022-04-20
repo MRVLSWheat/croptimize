@@ -15,6 +15,8 @@ public class Window_Graph : MonoBehaviour
     public GameObject moistureNotification;
 
     public TextMeshProUGUI groundMoisture;
+    public TextMeshProUGUI maxMoistValue;
+    public TextMeshProUGUI minMoistValue;
 
     public int combinedMoisture;
     public int averageMoisture;
@@ -60,11 +62,15 @@ public class Window_Graph : MonoBehaviour
 
         combinedMoisture = one + two + three + four + five + six + seven + eight + nine + ten + eleven + twelve + thirdteen + fourteen;
         averageMoisture = combinedMoisture / 14;
-
-        int finalMoisture = fourteen + 10;
-        groundMoisture.text = finalMoisture.ToString() + "%";
+        groundMoisture.text = averageMoisture.ToString() + "%";
 
         SetImages();
+
+        int minMoist = Mathf.Min(one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirdteen, fourteen);
+        minMoistValue.text = minMoist.ToString() + "%";
+
+        int maxMoist = Mathf.Max(one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirdteen, fourteen);
+        maxMoistValue.text = maxMoist.ToString() + "%";
     }
 
     private GameObject CreateCircle(Vector2 anchoredPosition)

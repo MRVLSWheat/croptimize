@@ -26,6 +26,8 @@ public class RandomNumberGenerator : MonoBehaviour
     public TextMeshProUGUI homeScreenTemp;
     public TextMeshProUGUI groundShake;
     public TextMeshProUGUI groundShakeLog;
+    public TextMeshProUGUI maxTempValue;
+    public TextMeshProUGUI minTempValue;
     public TextMeshProUGUI time;
 
     public void DefineWeather()
@@ -73,6 +75,12 @@ public class RandomNumberGenerator : MonoBehaviour
         homeScreenTemp.text = averageTemp.ToString() + "°C";
 
         SetThermometerImage();
+
+        int minTemp = Mathf.Min(monday, tuesday, wednesday, thursday, friday, saturday, sunday);
+        minTempValue.text = minTemp.ToString() + "°C";
+
+        int maxTemp = Mathf.Max(monday, tuesday, wednesday, thursday, friday, saturday, sunday);
+        maxTempValue.text = maxTemp.ToString() + "°C";
     }
 
     private void RandomGroundShake()
