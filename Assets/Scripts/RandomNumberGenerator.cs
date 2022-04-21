@@ -24,10 +24,10 @@ public class RandomNumberGenerator : MonoBehaviour
     public int averageTemp;
 
     public TextMeshProUGUI homeScreenTemp;
-    public TextMeshProUGUI groundShake;
     public TextMeshProUGUI groundShakeLog;
     public TextMeshProUGUI maxTempValue;
     public TextMeshProUGUI minTempValue;
+    public TextMeshProUGUI duration;
     public TextMeshProUGUI time;
 
     public void DefineWeather()
@@ -62,13 +62,13 @@ public class RandomNumberGenerator : MonoBehaviour
 
         int sunday = saturday + Random.Range(-4, 4);
 
-        days[0].text = monday.ToString();
-        days[1].text = tuesday.ToString();
-        days[2].text = wednesday.ToString();
-        days[3].text = thursday.ToString();
-        days[4].text = friday.ToString();
-        days[5].text = saturday.ToString();
-        days[6].text = sunday.ToString();
+        days[0].text = monday.ToString() + "°C";
+        days[1].text = tuesday.ToString() + "°C";
+        days[2].text = wednesday.ToString() + "°C";
+        days[3].text = thursday.ToString() + "°C";
+        days[4].text = friday.ToString() + "°C";
+        days[5].text = saturday.ToString() + "°C";
+        days[6].text = sunday.ToString() + "°C";
 
         combinedTemp = monday + tuesday + wednesday + thursday + friday + saturday + sunday;
         averageTemp = combinedTemp / 7;
@@ -85,13 +85,14 @@ public class RandomNumberGenerator : MonoBehaviour
 
     private void RandomGroundShake()
     {
-        int shakeNumber = Random.Range(0, 15);
-        groundShake.text = shakeNumber.ToString() + "%";
+        int shakeNumber = Random.Range(1, 15);
+        float durationTime = Random.Range(1.0f, 6.0f);
+        double durationTimeRounded = System.Math.Round(durationTime, 2);
+        duration.text = "for " + durationTimeRounded + "s";
         groundShakeLog.text = shakeNumber.ToString() + "%";
         
         if (shakeNumber >= 10)
         {
-            notifications[1].SetActive(true);
             redPotato.SetActive(true);
         }
     }
@@ -248,22 +249,22 @@ public class RandomNumberGenerator : MonoBehaviour
 
         if (hours < 10 && minutes > 10)
         {
-            time.text = "0" + hours + ":" + minutes + "h";
+            time.text = "at 0" + hours + ":" + minutes + "h";
         }
 
         if (hours < 10 && minutes < 10)
         {
-            time.text = "0" + hours + ":0" + minutes + "h";
+            time.text = "at 0" + hours + ":0" + minutes + "h";
         }
 
         if (hours > 10 && minutes < 10)
         {
-            time.text = hours + ":0" + minutes + "h"; 
+            time.text = "at " + hours + ":0" + minutes + "h"; 
         }
 
         if (hours > 10 && minutes > 10)
         {
-            time.text = hours + ":" + minutes + "h";
+            time.text = "at " + hours + ":" + minutes + "h";
         }
     }
 }

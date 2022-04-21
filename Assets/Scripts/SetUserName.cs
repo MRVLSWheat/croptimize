@@ -15,8 +15,10 @@ public class SetUserName : MonoBehaviour
     public GameObject loginScreen;
     public GameObject graphObject;
     public GameObject weatherObject;
+    public GameObject soilObject;
 
     private Window_Graph setGraph;
+    private RandomSoilTemp soilTemp;
     private RandomNumberGenerator setWeather;
 
     private string fakeUserName = "Mercury";
@@ -29,6 +31,7 @@ public class SetUserName : MonoBehaviour
     {
         setGraph = graphObject.GetComponent<Window_Graph>();
         setWeather = weatherObject.GetComponent<RandomNumberGenerator>();
+        soilTemp = soilObject.GetComponent<RandomSoilTemp>();
     }
 
     public void UserName()
@@ -47,6 +50,7 @@ public class SetUserName : MonoBehaviour
             {
                 setGraph.DefineMoisture();
                 setWeather.DefineWeather();
+                soilTemp.DefineSoilTemp();
                 firstLogin = 1;
             }
         }
