@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1057709066112",
+    "project_id": "croptimise-database",
+    "storage_bucket": "croptimise-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057709066112:android:e46a5441d0218bf41b2365",
+        "android_client_info": {
+          "package_name": "com.Potatwo.Croptimize"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057709066112-44b1ktr0v8jcf2o4fauagu5bp9sl634b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXaAk2zZOO2qrzBecEVZpwwQA6iMztea4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1057709066112-44b1ktr0v8jcf2o4fauagu5bp9sl634b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
