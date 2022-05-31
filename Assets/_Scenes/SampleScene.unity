@@ -15937,7 +15937,7 @@ MonoBehaviour:
   minMoistValue: {fileID: 795804760}
   combinedMoisture: 0
   averageMoisture: 10
-  circleSprite: {fileID: -2413806693520163455, guid: 7e1b70189ed691142a05dcb81e57c941, type: 3}
+  circleSprite: {fileID: 21300000, guid: cf67c5a69bc75ea45bc0fd11869148f3, type: 3}
 --- !u!1 &595528130
 GameObject:
   m_ObjectHideFlags: 0
