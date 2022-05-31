@@ -223,7 +223,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 30579512}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -400,8 +400,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Register
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e914f9230dca6474cb85916780174048, type: 2}
-  m_sharedMaterial: {fileID: -1712080816057643326, guid: e914f9230dca6474cb85916780174048, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4b10a61c6cfb9744189fac663a8a3c0c, type: 2}
+  m_sharedMaterial: {fileID: -7994455317133919186, guid: 4b10a61c6cfb9744189fac663a8a3c0c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

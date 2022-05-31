@@ -2787,8 +2787,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Leave
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e914f9230dca6474cb85916780174048, type: 2}
-  m_sharedMaterial: {fileID: -1712080816057643326, guid: e914f9230dca6474cb85916780174048, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4b10a61c6cfb9744189fac663a8a3c0c, type: 2}
+  m_sharedMaterial: {fileID: -7994455317133919186, guid: 4b10a61c6cfb9744189fac663a8a3c0c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2812,7 +2812,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 34.85
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3839,8 +3839,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Change alerts for temperature and moisture
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e914f9230dca6474cb85916780174048, type: 2}
-  m_sharedMaterial: {fileID: -1712080816057643326, guid: e914f9230dca6474cb85916780174048, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 10d336fffc0da9043bc8b95532fc3c29, type: 2}
+  m_sharedMaterial: {fileID: -4487816317967453465, guid: 10d336fffc0da9043bc8b95532fc3c29, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3864,7 +3864,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.4
+  m_fontSize: 33.85
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
