@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id">
+  <string name="firebase_database_url" translatable="false">https://croptimise-database-default-rtdb.europe-west1.firebasedatabase.app</string>
+  <string name="gcm_defaultSenderId" translatable="false">1057709066112</string>
+  <string name="google_storage_bucket" translatable="false">croptimise-database.appspot.com</string>
+  <string name="project_id" translatable="false">croptimise-database</string>
+  <string name="google_api_key" translatable="false">AIzaSyBXaAk2zZOO2qrzBecEVZpwwQA6iMztea4</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBXaAk2zZOO2qrzBecEVZpwwQA6iMztea4</string>
+  <string name="google_app_id" translatable="false">1:1057709066112:android:e46a5441d0218bf41b2365</string>
+  <string name="default_web_client_id" translatable="false">1057709066112-44b1ktr0v8jcf2o4fauagu5bp9sl634b.apps.googleusercontent.com</string>
+</resources>
