@@ -260,6 +260,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1792157023}
     m_Modifications:
+    - target: {fileID: 2740044950759005384, guid: 4d2f3a6a36269714b9bc08d54efa66bc, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
+    - target: {fileID: 2740044950759005384, guid: 4d2f3a6a36269714b9bc08d54efa66bc, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8115735033233461377, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
     - target: {fileID: 2740044950759005386, guid: 4d2f3a6a36269714b9bc08d54efa66bc, type: 3}
       propertyPath: m_Name
       value: Temperature
@@ -462,6 +470,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1792157023}
     m_Modifications:
+    - target: {fileID: 2740044950759005384, guid: 4d2f3a6a36269714b9bc08d54efa66bc, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
+    - target: {fileID: 2740044950759005384, guid: 4d2f3a6a36269714b9bc08d54efa66bc, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8115735033233461377, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
     - target: {fileID: 2740044950759005386, guid: 4d2f3a6a36269714b9bc08d54efa66bc, type: 3}
       propertyPath: m_Name
       value: Temperature
@@ -789,6 +805,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1792157023}
     m_Modifications:
+    - target: {fileID: 4746009181722077675, guid: 8f788f5be9e01b44e9862059ce0f61fe, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
+    - target: {fileID: 4746009181722077675, guid: 8f788f5be9e01b44e9862059ce0f61fe, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8115735033233461377, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
     - target: {fileID: 4746009181722077676, guid: 8f788f5be9e01b44e9862059ce0f61fe, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -891,6 +915,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1792157023}
     m_Modifications:
+    - target: {fileID: 2740044950759005384, guid: 4d2f3a6a36269714b9bc08d54efa66bc, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
+    - target: {fileID: 2740044950759005384, guid: 4d2f3a6a36269714b9bc08d54efa66bc, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8115735033233461377, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
     - target: {fileID: 2740044950759005386, guid: 4d2f3a6a36269714b9bc08d54efa66bc, type: 3}
       propertyPath: m_Name
       value: Temperature
@@ -993,6 +1025,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1792157023}
     m_Modifications:
+    - target: {fileID: 4746009181722077675, guid: 8f788f5be9e01b44e9862059ce0f61fe, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
+    - target: {fileID: 4746009181722077675, guid: 8f788f5be9e01b44e9862059ce0f61fe, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8115735033233461377, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
     - target: {fileID: 4746009181722077676, guid: 8f788f5be9e01b44e9862059ce0f61fe, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1095,6 +1135,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1792157023}
     m_Modifications:
+    - target: {fileID: 4746009181722077675, guid: 8f788f5be9e01b44e9862059ce0f61fe, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
+    - target: {fileID: 4746009181722077675, guid: 8f788f5be9e01b44e9862059ce0f61fe, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8115735033233461377, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
     - target: {fileID: 4746009181722077676, guid: 8f788f5be9e01b44e9862059ce0f61fe, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1489,6 +1537,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1792157023}
     m_Modifications:
+    - target: {fileID: 4746009181722077675, guid: 8f788f5be9e01b44e9862059ce0f61fe, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
+    - target: {fileID: 4746009181722077675, guid: 8f788f5be9e01b44e9862059ce0f61fe, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8115735033233461377, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
     - target: {fileID: 4746009181722077676, guid: 8f788f5be9e01b44e9862059ce0f61fe, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1591,6 +1647,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1792157023}
     m_Modifications:
+    - target: {fileID: 4746009181722077675, guid: 8f788f5be9e01b44e9862059ce0f61fe, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
+    - target: {fileID: 4746009181722077675, guid: 8f788f5be9e01b44e9862059ce0f61fe, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8115735033233461377, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
     - target: {fileID: 4746009181722077676, guid: 8f788f5be9e01b44e9862059ce0f61fe, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1818,6 +1882,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1792157023}
     m_Modifications:
+    - target: {fileID: 2740044950759005384, guid: 4d2f3a6a36269714b9bc08d54efa66bc, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
+    - target: {fileID: 2740044950759005384, guid: 4d2f3a6a36269714b9bc08d54efa66bc, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8115735033233461377, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
     - target: {fileID: 2740044950759005386, guid: 4d2f3a6a36269714b9bc08d54efa66bc, type: 3}
       propertyPath: m_Name
       value: Temperature
@@ -2349,6 +2421,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1792157023}
     m_Modifications:
+    - target: {fileID: 2740044950759005384, guid: 4d2f3a6a36269714b9bc08d54efa66bc, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
+    - target: {fileID: 2740044950759005384, guid: 4d2f3a6a36269714b9bc08d54efa66bc, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8115735033233461377, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
     - target: {fileID: 2740044950759005386, guid: 4d2f3a6a36269714b9bc08d54efa66bc, type: 3}
       propertyPath: m_Name
       value: Temperature
@@ -2802,6 +2882,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1792157023}
     m_Modifications:
+    - target: {fileID: 2740044950759005384, guid: 4d2f3a6a36269714b9bc08d54efa66bc, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
+    - target: {fileID: 2740044950759005384, guid: 4d2f3a6a36269714b9bc08d54efa66bc, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8115735033233461377, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
     - target: {fileID: 2740044950759005386, guid: 4d2f3a6a36269714b9bc08d54efa66bc, type: 3}
       propertyPath: m_Name
       value: Temperature
@@ -3915,6 +4003,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1792157023}
     m_Modifications:
+    - target: {fileID: 4746009181722077675, guid: 8f788f5be9e01b44e9862059ce0f61fe, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
+    - target: {fileID: 4746009181722077675, guid: 8f788f5be9e01b44e9862059ce0f61fe, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8115735033233461377, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
     - target: {fileID: 4746009181722077676, guid: 8f788f5be9e01b44e9862059ce0f61fe, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4327,6 +4423,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1792157023}
     m_Modifications:
+    - target: {fileID: 2740044950759005384, guid: 4d2f3a6a36269714b9bc08d54efa66bc, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
+    - target: {fileID: 2740044950759005384, guid: 4d2f3a6a36269714b9bc08d54efa66bc, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8115735033233461377, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
     - target: {fileID: 2740044950759005386, guid: 4d2f3a6a36269714b9bc08d54efa66bc, type: 3}
       propertyPath: m_Name
       value: Temperature
@@ -4424,6 +4528,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1792157023}
     m_Modifications:
+    - target: {fileID: 4746009181722077675, guid: 8f788f5be9e01b44e9862059ce0f61fe, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
+    - target: {fileID: 4746009181722077675, guid: 8f788f5be9e01b44e9862059ce0f61fe, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8115735033233461377, guid: aab87daa73e665b47b14105ffb1441cf, type: 2}
     - target: {fileID: 4746009181722077676, guid: 8f788f5be9e01b44e9862059ce0f61fe, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
