@@ -2715,7 +2715,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Leave
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e914f9230dca6474cb85916780174048, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: -1712080816057643326, guid: e914f9230dca6474cb85916780174048, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3767,7 +3767,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Change alerts for temperature and moisture
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e914f9230dca6474cb85916780174048, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: -1712080816057643326, guid: e914f9230dca6474cb85916780174048, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
