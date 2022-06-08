@@ -974,7 +974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7342383970081809346, guid: 23aa5ce6a40bbbe4ca96017fcf36a46c, type: 3}
       propertyPath: m_text
-      value: Emai ID
+      value: Email
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23aa5ce6a40bbbe4ca96017fcf36a46c, type: 3}
