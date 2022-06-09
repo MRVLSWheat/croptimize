@@ -1728,6 +1728,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Profile Pic
       objectReference: {fileID: 0}
+    - target: {fileID: 3768356385356766770, guid: 6886ee71a41c89b44a99ca6f564187f4, type: 3}
+      propertyPath: m_FlexibleWidth
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768356385356766770, guid: 6886ee71a41c89b44a99ca6f564187f4, type: 3}
+      propertyPath: m_FlexibleHeight
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 3768356385356766771, guid: 6886ee71a41c89b44a99ca6f564187f4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1758,11 +1766,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3768356385356766771, guid: 6886ee71a41c89b44a99ca6f564187f4, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 280
+      value: 133.5054
       objectReference: {fileID: 0}
     - target: {fileID: 3768356385356766771, guid: 6886ee71a41c89b44a99ca6f564187f4, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 281.1633
+      value: 99.9007
       objectReference: {fileID: 0}
     - target: {fileID: 3768356385356766771, guid: 6886ee71a41c89b44a99ca6f564187f4, type: 3}
       propertyPath: m_LocalPosition.x

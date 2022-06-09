@@ -298,11 +298,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3768356385356766771, guid: 6886ee71a41c89b44a99ca6f564187f4, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 280
+      value: 225.15
       objectReference: {fileID: 0}
     - target: {fileID: 3768356385356766771, guid: 6886ee71a41c89b44a99ca6f564187f4, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 281.1633
+      value: 226.0833
       objectReference: {fileID: 0}
     - target: {fileID: 3768356385356766771, guid: 6886ee71a41c89b44a99ca6f564187f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -397,7 +397,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 44.792}
+  m_SizeDelta: {x: 126.6978, y: 35.9114}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &239631284
 MonoBehaviour:
@@ -1059,8 +1059,8 @@ GameObject:
   - component: {fileID: 770577182}
   - component: {fileID: 770577184}
   - component: {fileID: 770577183}
-  - component: {fileID: 770577186}
   - component: {fileID: 770577185}
+  - component: {fileID: 770577186}
   m_Layer: 0
   m_Name: ButtonPanel
   m_TagString: Untagged
@@ -1156,16 +1156,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 770577181}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: -159
-    m_Right: 150
+    m_Left: 0
+    m_Right: 0
     m_Top: 0
-    m_Bottom: -104
-  m_ChildAlignment: 7
-  m_Spacing: 18.82
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 19.1
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -1211,7 +1211,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 151.2591, y: 44.7923}
+  m_SizeDelta: {x: 167.9102, y: 51.4527}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &772599798
 MonoBehaviour:
@@ -1231,7 +1231,7 @@ MonoBehaviour:
   m_PreferredWidth: -1
   m_PreferredHeight: -1
   m_FlexibleWidth: 2
-  m_FlexibleHeight: 2
+  m_FlexibleHeight: 4
   m_LayoutPriority: 1
 --- !u!114 &772599799
 MonoBehaviour:
