@@ -2820,7 +2820,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.85
+  m_fontSize: 44.8
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3023,7 +3023,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 96.0178, y: 46.2991}
+  m_SizeDelta: {x: 123.4495, y: 59.526}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1758760559
 MonoBehaviour:
@@ -3919,7 +3919,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Change alerts for temperature and moisture
+  m_text: Change Alerts
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 10d336fffc0da9043bc8b95532fc3c29, type: 2}
   m_sharedMaterial: {fileID: -4487816317967453465, guid: 10d336fffc0da9043bc8b95532fc3c29, type: 2}
@@ -3946,7 +3946,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.85
+  m_fontSize: 63.25
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1

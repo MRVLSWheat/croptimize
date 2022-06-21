@@ -34,7 +34,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_Padding.m_Top
-    value: 100
+    value: 150
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_Padding.m_Bottom
@@ -50,19 +50,19 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_ChildForceExpandWidth
-    value: 0
+    value: 1
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_ChildForceExpandHeight
-    value: 0
+    value: 1
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_ChildControlWidth
-    value: 0
+    value: 1
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_ChildControlHeight
-    value: 0
+    value: 1
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_ChildScaleWidth
