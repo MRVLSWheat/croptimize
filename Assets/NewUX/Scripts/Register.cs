@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class RegistrationButton : MonoBehaviour
+public class Register : MonoBehaviour
 {
     public void NewScene()
     {
-            SceneManager.LoadScene("NewMainMenu");
+        SceneManager.LoadScene("Register");
     }
 }
